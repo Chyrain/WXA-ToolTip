@@ -1,0 +1,8 @@
+<!--logs.wxml-->
+<view class=" log-list">
+  <block wx:for="{{logs}}" wx:for-item="log" wx:for-index="id">
+    <view class="log-item">
+      <template is="logItem" data="{{...log, avatarUrl:userInfo.avatarUrl}}" />
+    </view>
+  </block>
+</view>

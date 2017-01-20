@@ -1,0 +1,39 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 54rpx 0;
+  box-sizing: border-box;
+} 
+
+.abs {
+  position: absolute;
+  z-index: 100;
+}
+.abs.left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.abs.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.abs.top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+.abs.bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

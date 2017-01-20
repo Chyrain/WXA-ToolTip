@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<import src="../ToolTip/toolTip.wxml"/>
+<view class="container">
+  <!-- ToolTip信息提示 -->
+  <template is="toolTip" data="{{_toolTip_}}"/>
+
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <button type="primary" bindtap="successTap">Success</button>
+  <button type="primary" bindtap="infoTap">Info</button>
+  <button type="default" bindtap="warnTap">Warn</button>
+  <button type="warn" bindtap="errorTap">Error</button>
+</view>

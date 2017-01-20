@@ -1,0 +1,37 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0;
+  align-items: left;
+}
+.log-item {
+  position: relative;
+}
+.log-item-avatar {
+  float: left;
+  /*display: inline-block;*/
+  width: 98rpx;
+  height: 98rpx;
+  margin: 16rpx 16rpx;
+  border-radius: 50%;
+}
+.log-item-content {
+  /*display: inline-block;*/
+  padding: 16rpx 16rpx;
+  height: 98rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-bottom: 1rpx solid #b2b2b2;
+}
+.divider {
+  background: #b2b2b2;
+  height: 1rpx;
+  margin: 0 0 0 120rpx;
+}
+.log-item-date {
+  text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
